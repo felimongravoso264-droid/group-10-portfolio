@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Our Group Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script defer>
+    function showInfo(member) {
+      const infoBox = document.getElementById("memberInfo");
+      let content = "";
+
+      switch (member) {
+
+        case "group":
+          content = `
+            <img src="images/group.jpg" alt="Our Group Photo">
+            <h3>Group 10 — Creative Innovators 💡</h3>
+            <p>We are Group 10, a team of passionate students who love creativity, design, and teamwork. 
+            Together, we explore technology and express our ideas through web design and collaboration. 
+            Each member brings unique skills that make our projects strong and meaningful. 
+            Our goal is to learn, create, and grow together as future IT professionals.</p>
+          `;
+          break;
+
+        case "joan":
+          content = `
+            <img src="images/joan.jpg" alt="Joan Resuello">
+
+            <h3>Joan Resuello — Designer 🎨</h3>
+            <p>Joan Resuello is the creative mind behind our team’s visual identity. 
+            She designs layouts, color palettes, and interfaces that bring our ideas to life. 
+            Her passion for art and attention to detail help create projects that are both beautiful and user-friendly.</p>
+
+            <p><strong>Email:</strong> <a href="mailto:resuello14@gmail.com">resuello14@gmail.com</a></p>
+            <p><strong>Contact:</strong> 0993-941-6998</p>
+            <a href="https://example-portfolio.com/joan" target="_blank">🔗 Visit Joan's Portfolio</a>
+          `;
+          break;
+
+        case "felimon":
+          content = `
+            <img src="images/felimon.jpg" alt="Felimon Gravoso">
+
+            <h3>Felimon Gravoso — Programmer 💻</h3>
+            <p>Felimon Gravoso is the backbone of our technical work as the team’s programmer. 
+            He transforms our ideas into fully functional web pages and applications through clean, efficient code. 
+            Felimon enjoys solving logical problems and experimenting with new technologies.</p>
+          `;
+          break;
+
+        case "trisha":
+          content = `
+            <img src="images/trisha.jpg" alt="Trisha Andrada">
+
+            <h3>Trisha Andrada — Writer 🖋️</h3>
+            <p>Trisha Andrada gives our team a voice through her talent in writing and communication. 
+            She creates clear, engaging, and meaningful content that connects our ideas to the audience. 
+            Her creativity shines through words, making technical information sound simple and enjoyable.</p>
+          `;
+          break;
+
+        case "micha":
+          content = `
+            <img src="images/michaela.jpg" alt="Micha Valiente">
+
+            <h3>Micha Valiente — Photographer 📸</h3>
+            <p>Micha Valiente captures the heart of our teamwork through her photography. 
+            She documents moments that show our group’s creativity, dedication, and collaboration. 
+            Her skills in composition and lighting turn simple pictures into powerful visual stories.</p>
+          `;
+          break;
+
+        case "marc":
+          content = `
+            <img src="images/marc.jpg" alt="Marc Aaron Gabay">
+
+            <h3>Marc Aaron Gabay — Developer 🎮</h3>
+            <p>Marc Aaron Gabay is our team’s developer who brings ideas to life through digital innovation. 
+            He builds interactive features and ensures that every project runs smoothly across different devices. 
+            Marc combines logic and creativity to create applications that are both functional and engaging.</p>
+          `;
+          break;
+
+        default:
+          content = "<p>Click a name to see information.</p>";
+      }
+
+      infoBox.innerHTML = content;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="#" onclick="showInfo('group')">Welcome to Our Group Portfolio</a></h1>
+    <p>Welcome to our creative space! Here, you’ll discover the amazing teamwork, dedication, and talents of our group members.  
+       We are <strong>Group 10</strong> — a passionate team of learners driven by innovation and creativity.</p>
+  </header>
+
+  <section>
+    <h2>Meet Our Members</h2>
+    <div class="member-list">
+      <a href="#" onclick="showInfo('joan')">Joan Resuello</a>
+      <a href="#" onclick="showInfo('felimon')">Felimon Gravoso</a>
+      <a href="#" onclick="showInfo('trisha')">Trisha Andrada</a>
+      <a href="#" onclick="showInfo('micha')">Micha Valiente</a>
+      <a href="#" onclick="showInfo('marc')">Marc Aaron Gabay</a>
+    </div>
+  </section>
+
+  <section id="memberInfo">
+    <p>Click on a member’s name to view their profile and role in our team.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Group 10 — Created with teamwork and creativity 💙</p>
+  </footer>
+
+</body>
+</html>
